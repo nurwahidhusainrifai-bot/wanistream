@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+dist/
+build/
+
+# Database
+server/database/*.db
+server/database/*.sqlite
+
+# External Tools
+server/ffmpeg.exe
+
+# Environment / Secrets
+.env
+server/.env
+client/.env
+*.key
+*.pem
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Zip files
+*.zip
