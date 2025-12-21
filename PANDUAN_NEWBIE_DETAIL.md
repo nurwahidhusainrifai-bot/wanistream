@@ -52,11 +52,10 @@ Sekarang WANIstream sudah siap dipakai. Cara bukanya:
 - **Username**: `admin`
 - **Password**: `admin123`
 
-### 💡 Cara Pakai Fitur YouTube Spy:
-1. Klik menu **YouTube Spy** di bagian kiri.
-2. Masukkan URL video YouTube saingan bos.
-3. Klik tombol **SPY NOW**.
-4. Semua tag, hashtag, dan strateginya akan muncul!
+### 💡 Tips Cepat:
+1. Masukkan video ke folder `server/videos` secara manual.
+2. Buka **Video Library** di aplikasi untuk melihat daftar video.
+3. Gunakan menu **Manual** untuk streaming pakai Stream Key.
 
 ---
 

@@ -1,13 +1,12 @@
 # WANIstream V2: Premium YouTube Streaming Manager 🔥
 
-WANIstream V2 adalah solusi *all-in-one* untuk live streaming YouTube 24/7 non-stop dengan efisiensi tingkat tinggi dan fitur analisis kompetitor (YouTube Spy). Dirancang agar ringan di VPS dan sangat mudah digunakan di laptop/PC lokal.
+WANIstream V2 adalah solusi *all-in-one* untuk live streaming YouTube 24/7 non-stop dengan efisiensi tingkat tinggi. Dirancang agar ringan di VPS dan sangat mudah digunakan di laptop/PC lokal.
 
 ![WANIstream Banner](https://via.placeholder.com/1000x300?text=WANIstream+V2+Pro+Streaming+Panel)
 
 ---
 
 ## ✨ Fitur Unggulan
-- **🕵️ YouTube Strategy Spy**: Bongkar tag, hashtag, dan strategi video viral kompetitor.
 - **🚀 24/7 Non-Stop**: Auto-restart & Auto-resume menjamin live tetap jalan meski server reboot.
 - **🧊 Ultra-Low CPU (Copy Mode)**: CPU usage hanya ~1-2% per stream (hemat biaya VPS).
 - **🖥️ Desktop Mode**: Berjalan sebagai aplikasi Windows murni tanpa jendela CMD hitam.
@@ -84,7 +83,6 @@ Akses panel melalui browser di: `http://IP_VPS_ANDA:5000`
 
 ## ❓ Troubleshooting
 - **Zombie Streams**: Jika ada stream yang "Error" tapi masih jalan, jalankan `node reset_db.js`.
-- **Fitur Spy Tidak Jalan**: Pastikan Anda sudah mengisi `YOUTUBE_CLIENT_ID` di file `server/.env`.
 - **Streaming Buffer**: Gunakan bitrate yang sesuai dengan kecepatan upload internet Anda.
 
 ---
