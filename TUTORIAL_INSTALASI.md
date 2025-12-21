@@ -1,11 +1,10 @@
 # 🚀 WANIstream V2 - Ultimate YouTube Streaming Manager
 
-WANIstream V2 adalah panel manajemen live streaming YouTube profesional yang dirancang untuk stabilitas 24/7, efisiensi CPU maksimal, dan analisis kompetitor (YouTube Spy).
+WANIstream V2 adalah panel manajemen live streaming YouTube profesional yang dirancang untuk stabilitas 24/7 dan efisiensi CPU maksimal.
 
 ## ✨ Fitur Unggulan
 - **Non-Stop 24/7**: Auto-restart & Auto-resume jika server reboot.
 - **Ultra Efficient**: Menggunakan `Copy Codec` (CPU usage hanya ~1-2% per stream).
-- **YouTube Spy**: Bongkar tag, hashtag, dan strategi video kompetitor.
 - **Multi-Account**: Kelola banyak channel YouTube dalam satu panel.
 - **Desktop Mode**: Bisa dijalankan sebagai aplikasi desktop tanpa CMD (Windows).
 
@@ -14,7 +13,7 @@ WANIstream V2 adalah panel manajemen live streaming YouTube profesional yang dir
 ## 🛠️ Persyaratan Sistem
 1. **Node.js**: Versi 18 atau lebih baru.
 2. **FFmpeg**: Terinstal di sistem (wajib untuk streaming).
-3. **YouTube Data API Key**: Untuk fitur otomatisasi dan Spy.
+3. **YouTube Data API Key**: Untuk fitur otomatisasi.
 
 ---
 
