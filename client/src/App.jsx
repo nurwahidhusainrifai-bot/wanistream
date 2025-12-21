@@ -8,10 +8,8 @@ import Dashboard from './pages/Dashboard';
 import ManualMode from './pages/ManualMode';
 import AutoMode from './pages/AutoMode';
 import Videos from './pages/Videos';
-import Upload from './pages/Upload';
 import Channels from './pages/Channels';
 import History from './pages/History';
-import Spy from './pages/Spy';
 
 function AppLayout({ children }) {
     return (
@@ -45,10 +43,8 @@ export default function App() {
                                                 <Route path="/manual" element={<ManualMode />} />
                                                 <Route path="/auto" element={<AutoMode />} />
                                                 <Route path="/videos" element={<Videos />} />
-                                                <Route path="/upload" element={<Upload />} />
                                                 <Route path="/channels" element={<Channels />} />
                                                 <Route path="/history" element={<History />} />
-                                                <Route path="/spy" element={<Spy />} />
                                                 <Route path="*" element={<Navigate to="/" replace />} />
                                             </Routes>
                                         </ErrorBoundary>
