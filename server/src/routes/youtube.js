@@ -6,9 +6,7 @@ import {
     getAccounts,
     deleteAccount,
     setActiveAccount,
-    uploadVideoHandler,
-    syncStatsHandler,
-    analyzeYouTubeStrategy
+    syncStatsHandler
 } from '../controllers/youtubeController.js';
 import multer from 'multer';
 import path from 'path';
@@ -37,13 +35,7 @@ router.get('/accounts', authMiddleware, getAccounts);
 router.delete('/accounts/:id', authMiddleware, deleteAccount);
 router.put('/accounts/:id/active', authMiddleware, setActiveAccount);
 
-// Upload Video
-router.post('/upload', authMiddleware, upload.single('video'), uploadVideoHandler);
-
 // Sync Stats
 router.post('/sync', authMiddleware, syncStatsHandler);
-
-// YouTube Spy (Analyze Strategy)
-router.get('/spy', authMiddleware, analyzeYouTubeStrategy);
 
 export default router;

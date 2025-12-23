@@ -124,41 +124,7 @@ router.get('/stream/:filename', (req, res) => {
     }
 });
 
-// Upload video
-router.post('/upload', authMiddleware, upload.single('video'), async (req, res) => {
-    try {
-        if (!req.file) {
-            return res.status(400).json({ error: 'No video file uploaded' });
-        }
 
-        const { originalname, filename, path: filePath, size, mimetype } = req.file;
-        const displayName = req.body.name || originalname;
-        const sizeMB = (size / (1024 * 1024)).toFixed(2);
-
-        // Generate thumbnail
-        const thumbnailPath = await generateThumbnail(filePath, filename);
-        const thumbnailFilename = thumbnailPath ? path.basename(thumbnailPath) : null;
-
-        // Get duration
-        const duration = await getVideoDuration(filePath);
-
-        const result = await dbRun(
-            `INSERT INTO videos (name, original_name, filename, path, size_bytes, size_mb, mime_type, thumbnail_path, duration_seconds)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-            [displayName, originalname, filename, filePath, size, sizeMB, mimetype, thumbnailFilename, duration]
-        );
-
-        const video = await dbGet('SELECT * FROM videos WHERE id = ?', [result.id]);
-
-        res.json({
-            message: 'Video uploaded successfully',
-            video
-        });
-    } catch (error) {
-        console.error('Upload video error:', error);
-        res.status(500).json({ error: 'Failed to upload video' });
-    }
-});
 
 // Update video name
 router.put('/:id', authMiddleware, async (req, res) => {
